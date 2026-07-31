@@ -1,0 +1,84 @@
+header{
+
+    width:100%;
+    background:#fff;
+    border-bottom:1px solid #eee;
+    position:sticky;
+    top:0;
+    z-index:100;
+
+}
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:80px;
+
+}
+
+.logo{
+
+    font-size:30px;
+    font-weight:700;
+    color:#ff385c;
+
+}
+
+.logo span{
+
+    color:#222;
+
+}
+
+nav ul{
+
+    display:flex;
+    gap:35px;
+
+}
+
+nav ul li a{
+
+    font-size:16px;
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:#ff385c;
+
+}
+
+.login-btn{
+
+    padding:10px 24px;
+    border:none;
+    border-radius:30px;
+    background:#ff385c;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#e61e4d;
+
+}
+/*=========================================
+        MOBILE MENU
+==========================================*/
+
+.menu-toggle{
+
+    display:none;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+}

@@ -1,0 +1,104 @@
+/*=========================================
+        DESTINATION PAGE
+==========================================*/
+
+.destination-section{
+    padding:60px 0;
+}
+
+.destination-page{
+    max-width:1000px;
+    margin:auto;
+}
+
+/*=========================================
+        IMAGE
+==========================================*/
+
+.destination-image img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:20px;
+    display:block;
+}
+
+/*=========================================
+        CONTENT
+==========================================*/
+
+.destination-info{
+    margin-top:30px;
+}
+
+.destination-info h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.destination-info p{
+    font-size:18px;
+    color:#666;
+    margin-bottom:15px;
+    line-height:1.8;
+}
+
+.destination-info h3{
+    color:#ff385c;
+    margin-bottom:15px;
+}
+
+.destination-info h2{
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+/*=========================================
+        DIVIDER
+==========================================*/
+
+hr{
+    margin:25px 0;
+    border:none;
+    border-top:1px solid #ddd;
+}
+
+/*=========================================
+        BUTTON
+==========================================*/
+
+.book-btn{
+    margin-top:25px;
+    padding:15px 35px;
+    border:none;
+    background:#ff385c;
+    color:#fff;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.book-btn:hover{
+    background:#e31c5f;
+}
+
+/*=========================================
+        MOBILE
+==========================================*/
+
+@media(max-width:768px){
+
+.destination-image img{
+    height:220px;
+}
+
+.destination-info h1{
+    font-size:32px;
+}
+
+.destination-info h2{
+    font-size:28px;
+}
+
+}

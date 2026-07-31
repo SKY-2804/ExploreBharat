@@ -1,0 +1,167 @@
+/*=========================================
+ Google Font
+==========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/*=========================================
+        DESIGN SYSTEM
+==========================================*/
+
+:root{
+
+    /* Brand Colors */
+
+    --primary:#ff385c;
+
+    --primary-dark:#e31c5f;
+
+    --dark:#222;
+
+    --gray:#666;
+
+    --light:#fafafa;
+
+    --white:#ffffff;
+
+    /* Border Radius */
+
+    --radius:20px;
+
+    /* Shadow */
+
+    --shadow:0 10px 25px rgba(0,0,0,.08);
+
+    /* Section Spacing */
+
+    --section-space:80px;
+
+}
+
+/*=========================================
+ Reset
+==========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*=========================================
+ Body
+==========================================*/
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#fff;
+
+    color:#222;
+
+}
+
+/*=========================================
+ Global
+==========================================*/
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+}
+
+/*=========================================
+ Category Section
+==========================================*/
+
+.categories{
+
+    padding:70px 0;
+
+}
+
+.categories h2{
+
+    font-size:34px;
+
+    margin-bottom:35px;
+
+}
+
+.category-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:20px;
+
+}
+
+.category-card{
+
+    background:#fff;
+
+    border:1px solid #eee;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:42px;
+
+}
+
+.category-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 25px rgba(0,0,0,.12);
+
+}
+
+.category-card p{
+
+    margin-top:15px;
+
+    font-size:17px;
+
+}
+/* ui */
+section{
+    padding:80px 0;
+}
+
+h2{
+    font-size:36px;
+    margin-bottom:35px;
+}
+
+body{
+    background:#fafafa;
+}

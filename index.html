@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ExploreBharat</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Navbar -->
+  <link rel="stylesheet" href="css/navbar.css">
+
+  <!-- Hero -->
+  <link rel="stylesheet" href="css/hero.css">
+
+  <!-- Cards -->
+  <link rel="stylesheet" href="css/cards.css">
+
+  <!-- Footer -->
+  <link rel="stylesheet" href="css/footer.css">
+
+  <!-- Responsive -->
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+  <!-- ======================================
+                NAVBAR
+====================================== -->
+
+  <header>
+
+    <div class="container navbar">
+
+      <div class="logo">
+
+        Explore<span>Bharat</span>
+
+      </div>
+
+      <nav>
+
+        <ul>
+
+          <li><a href="#">Home</a></li>
+
+          <li><a href="#">Destinations</a></li>
+
+          <li><a href="#">Hotels</a></li>
+
+          <li><a href="#">Homestays</a></li>
+
+          <li><a href="#">About</a></li>
+
+        </ul>
+
+      </nav>
+
+      <div class="menu-toggle">
+
+        ☰
+
+      </div>
+
+      <button class="login-btn">
+
+        Login
+
+      </button>
+
+    </div>
+
+  </header>
+
+  <!-- ======================================
+                HERO
+====================================== -->
+
+  <section class="hero">
+
+    <div class="container hero-content">
+
+      <h1>Explore the Beauty of India</h1>
+
+      <p>
+
+        Discover amazing destinations, hotels, homestays and unforgettable experiences.
+
+      </p>
+
+      <div class="search-container">
+
+        <div class="search-item">
+
+          <label>Where</label>
+
+          <input type="text" id="searchInput" placeholder="Search Destination">
+
+        </div>
+
+        <div class="search-item">
+
+          <label>Check In</label>
+
+          <input type="date">
+
+        </div>
+
+        <div class="search-item">
+
+          <label>Check Out</label>
+
+          <input type="date">
+
+        </div>
+
+        <div class="search-item">
+
+          <label>Guests</label>
+
+          <input type="number" min="1" placeholder="Guests">
+
+        </div>
+
+        <button class="search-btn" id="searchBtn">
+
+          Search
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ======================================
+            CATEGORY
+====================================== -->
+
+  <section class="categories">
+
+    <div class="container">
+
+      <h2>Browse by Category</h2>
+
+      <div class="category-grid">
+
+        <div class="category-card">🏨<p>Hotels</p>
+        </div>
+
+        <div class="category-card">🏡<p>Homestays</p>
+        </div>
+
+        <div class="category-card">🏕️<p>Camping</p>
+        </div>
+
+        <div class="category-card">🏖️<p>Resorts</p>
+        </div>
+
+        <div class="category-card">🏘️<p>Villas</p>
+        </div>
+
+        <div class="category-card">🌄<p>Mountain View</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ======================================
+        POPULAR DESTINATIONS
+====================================== -->
+
+  <section class="popular">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Popular Destinations</h2>
+
+        <a href="#">Explore More →</a>
+
+      </div>
+
+      <div class="card-grid" id="destinationContainer">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ======================================
+        TRENDING HOTELS
+====================================== -->
+
+  <section class="hotels">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Trending Hotels</h2>
+
+        <a href="#">View All →</a>
+
+      </div>
+
+      <div class="hotel-grid" id="hotelContainer">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ======================================
+        EXPLORE BY STATE
+====================================== -->
+
+  <section class="states">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Explore by State</h2>
+
+        <a href="#">View All →</a>
+
+      </div>
+
+      <div class="state-grid">
+
+        <div class="state-card">
+
+          <img src="assets/images/goa.jpeg">
+
+          <div class="overlay">
+
+            <h3>Goa</h3>
+
+            <p>Beaches • Nightlife • Resorts</p>
+
+          </div>
+
+        </div>
+
+        <div class="state-card">
+
+          <img src="assets/images/kashmir.jpeg">
+
+          <div class="overlay">
+
+            <h3>Jammu & Kashmir</h3>
+
+            <p>Snow • Lakes • Valleys</p>
+
+          </div>
+
+        </div>
+
+        <div class="state-card">
+
+          <img src="assets/images/manali.jpeg">
+
+          <div class="overlay">
+
+            <h3>Himachal Pradesh</h3>
+
+            <p>Mountains • Adventure</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ======================================
+        TOP ATTRACTIONS
+====================================== -->
+
+  <section class="attractions">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Top Tourist Attractions</h2>
+
+        <a href="#">Explore More →</a>
+
+      </div>
+
+      <div class="attraction-grid">
+
+        <div class="attraction-card">
+
+          <img src="assets/images/places/leh.jpeg">
+
+          <div class="attraction-content">
+
+            <h3>Leh Palace</h3>
+
+            <p>📍 Ladakh</p>
+
+          </div>
+
+        </div>
+
+        <div class="attraction-card">
+
+          <img src="assets/images/places/kashmir.jpeg">
+
+          <div class="attraction-content">
+
+            <h3>Dal Lake</h3>
+
+            <p>📍 Srinagar</p>
+
+          </div>
+
+        </div>
+
+        <div class="attraction-card">
+
+          <img src="assets/images/places/manali.jpeg">
+
+          <div class="attraction-content">
+
+            <h3>Solang Valley</h3>
+
+            <p>📍 Himachal Pradesh</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ======================================
+            FEATURES
+====================================== -->
+
+  <section class="features">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Why Choose ExploreBharat</h2>
+
+      </div>
+
+      <div class="feature-grid">
+
+        <div class="feature">
+
+          <div class="icon">🌍</div>
+
+          <h3>500+ Destinations</h3>
+
+          <p>Discover India's most beautiful tourist places.</p>
+
+        </div>
+
+        <div class="feature">
+
+          <div class="icon">🏨</div>
+
+          <h3>Affordable Hotels</h3>
+
+          <p>Compare prices and choose your perfect stay.</p>
+
+        </div>
+
+        <div class="feature">
+
+          <div class="icon">⭐</div>
+
+          <h3>Trusted Reviews</h3>
+
+          <p>Real ratings from travelers across India.</p>
+
+        </div>
+
+        <div class="feature">
+
+          <div class="icon">📞</div>
+
+          <h3>24/7 Support</h3>
+
+          <p>We're here whenever you need travel assistance.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ======================================
+            NEWSLETTER
+====================================== -->
+
+  <section class="newsletter">
+
+    <div class="container">
+
+      <div class="newsletter-box">
+
+        <h2>Stay Updated</h2>
+
+        <p>
+
+          Get the latest travel deals, destination guides and hotel discounts.
+
+        </p>
+
+        <form class="newsletter-form">
+
+          <input type="email" placeholder="Enter your email">
+
+          <button>
+
+            Subscribe
+
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ======================================
+                FOOTER
+====================================== -->
+
+  <footer>
+
+    <div class="container footer-grid">
+
+      <!-- Footer remains the same as your current version -->
+
+    </div>
+
+    <div class="copyright">
+
+      © 2026 ExploreBharat | All Rights Reserved.
+      
+    </div>
+
+  </footer>
+
+  <!-- JavaScript -->
+
+  <script src="data/destinations.js"></script>
+  <script src="data/hotels.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
