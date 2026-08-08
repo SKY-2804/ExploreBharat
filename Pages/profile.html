@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Profile | ExploreBharat</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/profile.css" />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body>
+    <!-- ==========================================
+                    NAVBAR START
+    ========================================== -->
+
+    <header class="navbar">
+      <div class="container navbar-container">
+        <!-- Logo -->
+
+        <a href="../index.html" class="logo">
+          <img src="../assets/images/l.png" alt="ExploreBharat Logo" class="logo-image" />
+        </a>
+
+        <!-- Navigation -->
+
+        <nav class="navbar-menu">
+          <ul>
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">
+                <i data-lucide="compass"></i>
+                <span>Explore</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="stay.html" class="nav-link">
+                <i data-lucide="hotel"></i>
+                <span>Stay</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="travel.html" class="nav-link">
+                <i data-lucide="plane"></i>
+                <span>Travel</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="experiences.html" class="nav-link">
+                <i data-lucide="mountain"></i>
+                <span>Experiences</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="planner.html" class="nav-link">
+                <i data-lucide="sparkles"></i>
+                <span>AI Planner</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="community.html" class="nav-link">
+                <i data-lucide="users"></i>
+                <span>Community</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Right Actions -->
+
+        <div class="navbar-actions">
+          <button class="icon-btn">
+            <i data-lucide="heart"></i>
+          </button>
+
+          <button class="icon-btn">
+            <i data-lucide="bell"></i>
+          </button>
+
+          <div class="profile-nav-avatar" id="navAvatar">
+            <span id="navInitial">S</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==========================================
+                    NAVBAR END
+    ========================================== -->
+
+    <!-- ==========================================
+                    PROFILE START
+    ========================================== -->
+    <main class="profile-page">
+      <div class="container">
+        <!-- Profile Hero -->
+
+        <section class="profile-hero">
+          <div class="profile-cover"></div>
+          <div class="profile-top">
+            <div class="profile-avatar-wrapper">
+              <img id="profileAvatar" class="profile-avatar-img" src="" alt="profile" />
+
+              <div id="profileLetter" class="profile-avatar-letter">S</div>
+            </div>
+
+            <div class="profile-user-info">
+              <h1 id="profileNameText">Satyam</h1>
+
+              <p id="profileEmailText">satyam@gmail.com</p>
+              <p id="profilePhoneText"></p>
+
+              <div class="member-badge">
+                <i data-lucide="badge-check"></i>
+                Explorer Member
+              </div>
+            </div>
+
+            <button class="edit-profile-btn">
+              <i data-lucide="square-pen"></i>
+              Edit Profile
+            </button>
+          </div>
+        </section>
+
+        <!-- Stats -->
+
+        <section class="profile-stats">
+          <div class="stat-card">
+            <h2>12</h2>
+
+            <p>Trips</p>
+          </div>
+
+          <div class="stat-card">
+            <h2>6</h2>
+
+            <p>States</p>
+          </div>
+
+          <div class="stat-card">
+            <h2>34</h2>
+
+            <p>Wishlist</p>
+          </div>
+
+          <div class="stat-card">
+            <h2>18</h2>
+
+            <p>Reviews</p>
+          </div>
+        </section>
+
+        <!-- Dashboard -->
+
+        <section class="profile-grid">
+          <aside class="profile-sidebar">
+            <button class="profile-menu active">
+              <i data-lucide="user"></i>
+
+              My Profile
+            </button>
+
+            <button class="profile-menu">
+              <i data-lucide="heart"></i>
+
+              Wishlist
+            </button>
+
+            <button class="profile-menu">
+              <i data-lucide="map"></i>
+
+              My Trips
+            </button>
+
+            <button class="profile-menu">
+              <i data-lucide="book-open"></i>
+
+              Travel Journal
+            </button>
+
+            <button class="profile-menu">
+              <i data-lucide="calendar-days"></i>
+
+              Bookings
+            </button>
+
+            <button class="profile-menu">
+              <i data-lucide="star"></i>
+
+              Reviews
+            </button>
+
+            <button class="profile-menu">
+              <i data-lucide="settings"></i>
+
+              Settings
+            </button>
+
+            <button id="logoutBtn" class="profile-menu logout">
+              <i data-lucide="log-out"></i>
+
+              Logout
+            </button>
+          </aside>
+
+          <div class="profile-content">
+            <div class="profile-card">
+              <h2>Personal Information</h2>
+
+              <form class="profile-form">
+                <div class="input-group">
+                  <label>Profile Photo</label>
+                  <input type="file" id="profileUpload" accept="image/*" />
+                </div>
+
+                <div class="input-group">
+                  <label>Full Name</label>
+                  <input type="text" id="profileName" />
+                </div>
+
+                <div class="input-group">
+                  <label>Email Address</label>
+                  <input type="email" id="profileEmail" readonly />
+                </div>
+
+                <div class="input-group">
+                  <label>Phone Number</label>
+                  <input type="text" id="profilePhone" />
+                </div>
+
+                <div class="input-group">
+                  <button type="button" id="saveProfile">Save Changes</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ==========================================
+                    PROFILE END
+    ========================================== -->
+
+    <!-- ==========================================
+                    FOOTER START
+    ========================================== -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <img src="../assets/images/l.png" alt="ExploreBharat" />
+
+            <p>
+              ExploreBharat helps travelers discover destinations, build AI-powered itineraries and
+              experience incredible journeys across India.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h3>Explore</h3>
+
+            <a href="#">Destinations</a>
+            <a href="#">Hotels</a>
+            <a href="#">Experiences</a>
+            <a href="#">AI Planner</a>
+          </div>
+
+          <div class="footer-links">
+            <h3>Company</h3>
+
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+          </div>
+
+          <div class="footer-links">
+            <h3>Follow Us</h3>
+
+            <a href="#"><i data-lucide="instagram"></i>Instagram</a>
+            <a href="#"><i data-lucide="facebook"></i>Facebook</a>
+            <a href="#"><i data-lucide="twitter"></i>Twitter</a>
+            <a href="#"><i data-lucide="youtube"></i>YouTube</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 ExploreBharat • Built with ❤️ in India</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==========================================
+                    FOOTER END
+    ========================================== -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="../js/profile.js"></script>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

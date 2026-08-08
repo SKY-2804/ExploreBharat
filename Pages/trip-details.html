@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Trip Details | ExploreBharat</title>
+
+    <!-- ==========================================
+       FONT
+  =========================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ==========================================
+       CSS
+  =========================================== -->
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/trip-details.css" />
+
+    <!-- ==========================================
+       LUCIDE
+  =========================================== -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body>
+    <!-- ==========================================
+       NAVBAR
+  =========================================== -->
+
+    <header id="navbar"></header>
+
+    <!-- ==========================================
+       TRIP DETAILS
+  =========================================== -->
+
+    <main class="trip-details-page">
+      <div class="container">
+        <!-- ========================================
+           BACK TO MY TRIPS
+      ========================================= -->
+
+        <a href="my-trips.html" class="back-trips">
+          <i data-lucide="arrow-left"></i>
+
+          <span>My Trips</span>
+        </a>
+
+        <!-- ========================================
+           TRIP HEADER
+      ========================================= -->
+
+        <section class="trip-details-header" id="tripDetails">
+          <div>
+            <span class="trips-label">
+              <i data-lucide="map"></i>
+
+              <span>My Journey</span>
+            </span>
+
+            <h1 id="tripDestination">Trip</h1>
+
+            <p id="tripDates">Your trip details</p>
+          </div>
+
+          <span class="trip-status" id="tripStatus"> Upcoming </span>
+        </section>
+
+        <!-- ========================================
+           TRIP OVERVIEW
+      ========================================= -->
+
+        <section class="trip-overview">
+          <!-- Destination -->
+
+          <div class="overview-item">
+            <div class="overview-icon">
+              <i data-lucide="map-pin"></i>
+            </div>
+
+            <div>
+              <span>Destination</span>
+
+              <strong id="overviewDestination"> — </strong>
+            </div>
+          </div>
+
+          <!-- Dates -->
+
+          <div class="overview-item">
+            <div class="overview-icon">
+              <i data-lucide="calendar"></i>
+            </div>
+
+            <div>
+              <span>Dates</span>
+
+              <strong id="overviewDates"> — </strong>
+            </div>
+          </div>
+
+          <!-- Travelers -->
+
+          <div class="overview-item">
+            <div class="overview-icon">
+              <i data-lucide="users"></i>
+            </div>
+
+            <div>
+              <span>Travelers</span>
+
+              <strong id="overviewTravelers"> — </strong>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========================================
+           ITINERARY SECTION
+      ========================================= -->
+
+        <section class="itinerary-section">
+          <!-- ======================================
+             ITINERARY HEADER
+        ======================================= -->
+
+          <div class="section-heading">
+            <div>
+              <span class="trips-label">
+                <i data-lucide="sliders-horizontal"></i>
+
+                <span>Your Plan</span>
+              </span>
+
+              <h2>Trip Itinerary</h2>
+
+              <p>Organize the places you want to explore during your journey.</p>
+            </div>
+
+            <!-- ==================================
+               TOP ADD PLACE BUTTON
+
+               IMPORTANT:
+               JS uses #addPlaceBtn
+          =================================== -->
+
+            <button type="button" class="add-place-btn" id="addPlaceBtn">
+              <i data-lucide="plus"></i>
+
+              <span>Add Place</span>
+            </button>
+          </div>
+
+          <!-- ======================================
+             ITINERARY LIST
+
+             JavaScript creates the place cards
+             inside this element.
+        ======================================= -->
+
+          <div class="itinerary-list" id="itineraryList"></div>
+
+          <!-- ======================================
+             EMPTY STATE
+        ======================================= -->
+
+          <div class="itinerary-empty" id="itineraryEmpty">
+            <div class="itinerary-empty-icon">
+              <i data-lucide="map"></i>
+            </div>
+
+            <h3>Your itinerary is empty</h3>
+
+            <p>Add places you want to explore during this trip.</p>
+
+            <!-- ==================================
+               EMPTY STATE ADD BUTTON
+
+               IMPORTANT:
+               JS uses #emptyAddPlaceBtn
+          =================================== -->
+
+            <button type="button" class="empty-add-place-btn" id="emptyAddPlaceBtn">
+              <i data-lucide="plus"></i>
+
+              <span>Add Place</span>
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ==========================================
+       ADD PLACE MODAL
+  =========================================== -->
+
+    <div class="place-modal" id="placeModal" aria-hidden="true">
+      <div class="place-modal-box" role="dialog" aria-modal="true" aria-labelledby="addPlaceTitle">
+        <!-- ======================================
+           CLOSE BUTTON
+      ======================================= -->
+
+        <button
+          type="button"
+          class="place-modal-close"
+          id="closePlaceModal"
+          aria-label="Close Add Place dialog"
+        >
+          <i data-lucide="x"></i>
+        </button>
+
+        <!-- ======================================
+           MODAL LABEL
+      ======================================= -->
+
+        <span class="trips-label">
+          <i data-lucide="map-pin"></i>
+
+          <span>Add Destination</span>
+        </span>
+
+        <h2 id="addPlaceTitle">Add a Place</h2>
+
+        <p>Add a place you want to visit during this trip.</p>
+
+        <!-- ======================================
+           ADD PLACE FORM
+      ======================================= -->
+
+        <form id="placeForm">
+          <!-- Place Name -->
+
+          <div class="trip-field">
+            <label for="placeName"> Place Name </label>
+
+            <input
+              id="placeName"
+              name="placeName"
+              type="text"
+              placeholder="e.g. Solang Valley"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <!-- Location -->
+
+          <div class="trip-field">
+            <label for="placeLocation"> Location </label>
+
+            <input
+              id="placeLocation"
+              name="placeLocation"
+              type="text"
+              placeholder="e.g. Manali"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <!-- Submit -->
+
+          <button class="add-place-submit" type="submit">
+            <i data-lucide="plus"></i>
+
+            <span>Add to Trip</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ==========================================
+       FOOTER
+  =========================================== -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <p>© 2026 ExploreBharat • Built with ❤️ in India</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==========================================
+       JAVASCRIPT
+  =========================================== -->
+
+    <script src="../js/trip-details.js"></script>
+
+    <!-- ==========================================
+       LUCIDE INITIALIZATION
+  =========================================== -->
+
+    <script>
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    </script>
+  </body>
+</html>

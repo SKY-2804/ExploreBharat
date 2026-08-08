@@ -1,486 +1,1108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8" />
 
-  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExploreBharat | Explore • Experience • Remember</title>
 
-  <title>ExploreBharat</title>
+  <!-- Google Fonts -->
 
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-  <!-- Navbar -->
-  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- Hero -->
-  <link rel="stylesheet" href="css/hero.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
 
-  <!-- Cards -->
-  <link rel="stylesheet" href="css/cards.css">
+  <!-- CSS -->
 
-  <!-- Footer -->
-  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/variables.css" />
 
-  <!-- Responsive -->
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/reset.css" />
+
+  <link rel="stylesheet" href="css/navbar.css" />
+
+  <link rel="stylesheet" href="css/hero.css" />
+
+  <link rel="stylesheet" href="css/search.css" />
+
+  <link rel="stylesheet" href="css/categories.css" />
+
+  <link rel="stylesheet" href="css/trending.css" />
+
+  <link rel="stylesheet" href="css/footer.css" />
+
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="stylesheet" href="css/ai-banner.css" />
+
+  <link rel="stylesheet" href="css/features.css" />
+
+  <link rel="stylesheet" href="css/testimonials.css" />
+
+  <link rel="stylesheet" href="css/why.css" />
+
+  <link rel="stylesheet" href="css/newsletter.css" />
+
+  <link rel="stylesheet" href="css/footer.css" />
+
+  <link rel="stylesheet" href="css/auth.css" />
 
 </head>
 
 <body>
+  <!--
+                NAVBAR START
+-->
 
-  <!-- ======================================
-                NAVBAR
-====================================== -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <!-- Logo -->
 
-  <header>
+      <a href="index.html" class="logo">
+        <img src="assets/images/l.png" alt="ExploreBharat Logo" class="logo-image" />
+      </a>
 
-    <div class="container navbar">
+      <!-- Navigation -->
 
-      <div class="logo">
-
-        Explore<span>Bharat</span>
-
-      </div>
-
-      <nav>
-
+      <nav class="navbar-menu">
         <ul>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i data-lucide="compass"></i>
 
-          <li><a href="#">Home</a></li>
+              <span>Explore</span>
+            </a>
+          </li>
 
-          <li><a href="#">Destinations</a></li>
+          <li class="nav-item">
+            <a href="pages/stay.html" class="nav-link">
+              <i data-lucide="hotel"></i>
 
-          <li><a href="#">Hotels</a></li>
+              <span>Stay</span>
+            </a>
+          </li>
 
-          <li><a href="#">Homestays</a></li>
+          <li class="nav-item">
+            <a href="pages/travel.html" class="nav-link">
+              <i data-lucide="plane"></i>
 
-          <li><a href="#">About</a></li>
+              <span>Travel</span>
+            </a>
+          </li>
 
+          <li class="nav-item">
+            <a href="pages/experiences.html" class="nav-link">
+              <i data-lucide="mountain"></i>
+
+              <span>Experiences</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="pages/planner.html" class="nav-link">
+              <i data-lucide="sparkles"></i>
+
+              <span>AI Planner</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="pages/community.html" class="nav-link">
+              <i data-lucide="users"></i>
+
+              <span>Community</span>
+            </a>
+          </li>
         </ul>
-
       </nav>
 
-      <div class="menu-toggle">
+      <!-- Right Actions -->
 
-        ☰
+      <div class="navbar-actions">
+
+        <button class="icon-btn" aria-label="Wishlist">
+          <i data-lucide="heart"></i>
+        </button>
+
+        <button class="icon-btn" aria-label="Notifications">
+          <i data-lucide="bell"></i>
+        </button>
+
+        <button id="login-btn" class="login-btn">
+          Login
+        </button>
 
       </div>
+  </header>
 
-      <button class="login-btn">
+  <!-- NAVBAR END -->
 
-        Login
+  <!-- MAIN START -->
 
+  <main>
+    <!-- HERO SECTION STAR -->
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-banner">
+          <div class="hero-overlay"></div>
+
+          <div class="hero-grid">
+            <!-- Left -->
+
+            <div class="hero-content">
+              <span class="hero-badge"> INDIA'S SMART TRAVEL PLATFORM </span>
+
+              <h1 class="hero-title">
+                Experience India
+
+                <span>Like Never Before</span>
+              </h1>
+
+              <p class="hero-description">
+                Discover hidden destinations, unforgettable road trips, local experiences and
+                AI-powered travel planning with ExploreBharat.
+              </p>
+
+              <div class="hero-buttons">
+                <button class="primary-btn">
+                  <i data-lucide="sparkles"></i>
+
+                  Plan My Journey
+                </button>
+
+                <button class="secondary-btn">
+                  <i data-lucide="compass"></i>
+
+                  Explore India
+                </button>
+              </div>
+            </div>
+
+            <!-- Right -->
+
+            <div class="hero-card">
+              <div class="card-header">
+                <h3>Journey Snapshot</h3>
+
+                <span class="live"> Live </span>
+              </div>
+
+              <div class="card-row">
+                <span> Destination </span>
+
+                <strong> Leh Ladakh </strong>
+              </div>
+
+              <div class="card-row">
+                <span> Budget </span>
+
+                <strong> ₹18,000 </strong>
+              </div>
+
+              <div class="card-row">
+                <span> Weather </span>
+
+                <strong> 18°C Sunny </strong>
+              </div>
+
+              <div class="card-row">
+                <span> Stay </span>
+
+                <strong> 28 Available </strong>
+              </div>
+
+              <div class="card-row">
+                <span> Best Time </span>
+
+                <div class="rating">
+                  <i data-lucide="star"></i>
+                  <i data-lucide="star"></i>
+                  <i data-lucide="star"></i>
+                  <i data-lucide="star"></i>
+                  <i data-lucide="star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HERO SECTION END -->
+    <!-- ==========================================
+            SEARCH SECTION START
+========================================== -->
+
+    <section class="search">
+      <div class="container">
+        <div class="search-box">
+          <div class="search-field">
+            <label>From</label>
+
+            <input type="text" placeholder="Delhi" />
+          </div>
+
+          <div class="search-field">
+            <label>Destination</label>
+
+            <input type="text" placeholder="Where do you want to explore?" />
+          </div>
+
+          <div class="search-field">
+            <label>Budget</label>
+
+            <select>
+              <option>₹10,000</option>
+              <option>₹20,000</option>
+              <option>₹30,000</option>
+              <option>₹50,000+</option>
+            </select>
+          </div>
+
+          <div class="search-field">
+            <label>Days</label>
+
+            <select>
+              <option>2 Days</option>
+              <option>3 Days</option>
+              <option>5 Days</option>
+              <option>7 Days</option>
+            </select>
+          </div>
+
+          <div class="search-field">
+            <label>Travel Style</label>
+
+            <select>
+              <option>Solo</option>
+              <option>Couple</option>
+              <option>Family</option>
+              <option>Friends</option>
+              <option>Backpacker</option>
+            </select>
+          </div>
+
+          <button class="search-btn">
+            <i data-lucide="search"></i>
+
+            Explore
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+            SEARCH SECTION END
+========================================== -->
+
+    <!-- ==========================================
+            CATEGORIES START
+========================================== -->
+
+    <section class="categories">
+      <div class="container">
+        <div class="categories-grid">
+          <a href="#" class="category-card">
+            <i data-lucide="palmtree"></i>
+
+            <span>Weekend Trips</span>
+          </a>
+
+          <a href="#" class="category-card">
+            <i data-lucide="gem"></i>
+
+            <span>Hidden Gems</span>
+          </a>
+
+          <a href="#" class="category-card">
+            <i data-lucide="car"></i>
+
+            <span>Road Trips</span>
+          </a>
+
+          <a href="#" class="category-card">
+            <i data-lucide="mountain"></i>
+
+            <span>Adventure</span>
+          </a>
+
+          <a href="#" class="category-card">
+            <i data-lucide="landmark"></i>
+
+            <span>Spiritual</span>
+          </a>
+
+          <a href="#" class="category-card">
+            <i data-lucide="heart"></i>
+
+            <span>Romantic</span>
+          </a>
+
+          <a href="#" class="category-card">
+            <i data-lucide="users"></i>
+
+            <span>Family Trips</span>
+          </a>
+
+          <a href="#" class="category-card">
+            <i data-lucide="grid-2x2"></i>
+
+            <span>More</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+            CATEGORIES END
+========================================== -->
+
+    <!-- ==========================================
+            TRENDING DESTINATIONS START
+========================================== -->
+
+   <div class="destination-grid">
+
+  <!-- Leh Ladakh -->
+  <div class="destination-card">
+
+    <div class="destination-image">
+
+      <img
+        src="assets/images/ladakh.png"
+        alt="Leh Ladakh"
+      />
+
+      <span class="rating-badge">★ 4.9</span>
+
+      <button
+        class="wishlist-btn"
+        data-id="leh-ladakh"
+        data-name="Leh Ladakh"
+        data-location="Ladakh"
+        data-category="Mountain"
+        data-image="assets/images/ladakh.png"
+        aria-label="Add Leh Ladakh to wishlist"
+      >
+        <i data-lucide="heart"></i>
       </button>
 
     </div>
 
-  </header>
+    <div class="destination-content">
 
-  <!-- ======================================
-                HERO
-====================================== -->
+      <h3>Leh Ladakh</h3>
 
-  <section class="hero">
+      <p>Ladakh</p>
 
-    <div class="container hero-content">
+      <div class="destination-footer">
 
-      <h1>Explore the Beauty of India</h1>
+        <span>From ₹4,500</span>
 
-      <p>
+        <a href="#">
+          Explore
+          <i data-lucide="arrow-right"></i>
+        </a>
 
-        Discover amazing destinations, hotels, homestays and unforgettable experiences.
+      </div>
 
-      </p>
+    </div>
 
-      <div class="search-container">
+  </div>
 
-        <div class="search-item">
 
-          <label>Where</label>
+  <!-- Manali -->
+  <div class="destination-card">
 
-          <input type="text" id="searchInput" placeholder="Search Destination">
+    <div class="destination-image">
+
+      <img
+        src="assets/images/manali.png"
+        alt="Manali"
+      />
+
+      <span class="rating-badge">★ 4.8</span>
+
+      <button
+        class="wishlist-btn"
+        data-id="manali"
+        data-name="Manali"
+        data-location="Himachal Pradesh"
+        data-category="Mountain"
+        data-image="assets/images/manali.png"
+        aria-label="Add Manali to wishlist"
+      >
+        <i data-lucide="heart"></i>
+      </button>
+
+    </div>
+
+    <div class="destination-content">
+
+      <h3>Manali</h3>
+
+      <p>Himachal Pradesh</p>
+
+      <div class="destination-footer">
+
+        <span>From ₹3,200</span>
+
+        <a href="#">
+          Explore
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Udaipur -->
+  <div class="destination-card">
+
+    <div class="destination-image">
+
+      <img
+        src="assets/images/udaipur.png"
+        alt="Udaipur"
+      />
+
+      <span class="rating-badge">★ 4.7</span>
+
+      <button
+        class="wishlist-btn"
+        data-id="udaipur"
+        data-name="Udaipur"
+        data-location="Rajasthan"
+        data-category="Heritage"
+        data-image="assets/images/udaipur.png"
+        aria-label="Add Udaipur to wishlist"
+      >
+        <i data-lucide="heart"></i>
+      </button>
+
+    </div>
+
+    <div class="destination-content">
+
+      <h3>Udaipur</h3>
+
+      <p>Rajasthan</p>
+
+      <div class="destination-footer">
+
+        <span>From ₹3,800</span>
+
+        <a href="#">
+          Explore
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Goa -->
+  <div class="destination-card">
+
+    <div class="destination-image">
+
+      <img
+        src="assets/images/goa.png"
+        alt="Goa"
+      />
+
+      <span class="rating-badge">★ 4.9</span>
+
+      <button
+        class="wishlist-btn"
+        data-id="goa"
+        data-name="Goa"
+        data-location="Goa"
+        data-category="Beach"
+        data-image="assets/images/goa.png"
+        aria-label="Add Goa to wishlist"
+      >
+        <i data-lucide="heart"></i>
+      </button>
+
+    </div>
+
+    <div class="destination-content">
+
+      <h3>Goa</h3>
+
+      <p>Goa</p>
+
+      <div class="destination-footer">
+
+        <span>From ₹2,900</span>
+
+        <a href="#">
+          Explore
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+    <!-- ==========================================
+            TRENDING DESTINATIONS END
+========================================== -->
+
+    <!-- ==========================================
+            AI TRIP PLANNER START
+========================================== -->
+
+    <section class="ai-planner">
+      <div class="container">
+        <div class="ai-wrapper">
+          <!-- Left -->
+
+          <div class="ai-left">
+            <span class="section-tag"> AI TRAVEL PLANNER </span>
+
+            <h2>Tell us your budget. We'll build your trip.</h2>
+
+            <p>
+              ExploreBharat AI creates complete journeys with hotels, routes, hidden gems,
+              experiences, weather, estimated budget and personalized itineraries.
+            </p>
+
+            <div class="ai-points">
+              <div>
+                <i data-lucide="wallet"></i>
+
+                Budget Optimized
+              </div>
+
+              <div>
+                <i data-lucide="map"></i>
+
+                Hidden Places
+              </div>
+
+              <div>
+                <i data-lucide="route"></i>
+
+                Smart Routes
+              </div>
+
+              <div>
+                <i data-lucide="calendar-days"></i>
+
+                Complete Itinerary
+              </div>
+            </div>
+          </div>
+
+          <!-- Right -->
+
+          <div class="planner-card">
+            <h3>Create My Trip</h3>
+
+            <div class="planner-group">
+              <label>Budget</label>
+
+              <input type="text" placeholder="₹15,000" />
+            </div>
+
+            <div class="planner-group">
+              <label>Duration</label>
+
+              <select>
+                <option>3 Days</option>
+
+                <option>5 Days</option>
+
+                <option>7 Days</option>
+              </select>
+            </div>
+
+            <div class="planner-group">
+              <label>Travel Style</label>
+
+              <select>
+                <option>Solo</option>
+
+                <option>Couple</option>
+
+                <option>Friends</option>
+
+                <option>Family</option>
+              </select>
+            </div>
+
+            <div class="planner-group">
+              <label>Starting From</label>
+
+              <input type="text" placeholder="Delhi" />
+            </div>
+
+            <button class="planner-btn">Generate My Journey</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+            AI TRIP PLANNER END
+========================================== -->
+    <!-- ==========================================
+        TESTIMONIALS START
+========================================== -->
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">TESTIMONIALS</span>
+
+          <h2>What Travelers Say</h2>
+
+          <p>
+            Thousands of travelers trust ExploreBharat to plan unforgettable journeys across
+            India.
+          </p>
+        </div>
+
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+
+            <p class="review">
+              "The AI itinerary saved us hours of planning. Every recommendation was perfect."
+            </p>
+
+            <div class="reviewer">
+              <div class="reviewer-avatar">RS</div>
+
+              <div>
+                <h4>Rahul Sharma</h4>
+                <span>Delhi</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+
+            <p class="review">
+              "Found hidden places I had never heard of. The trip was unforgettable."
+            </p>
+
+            <div class="reviewer">
+              <div class="reviewer-avatar">PP</div>
+
+              <div>
+                <h4>Priya Patel</h4>
+                <span>Ahmedabad</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+
+            <p class="review">
+              "Hotels, routes and experiences were perfectly planned. Highly recommended."
+            </p>
+
+            <div class="reviewer">
+              <div class="reviewer-avatar">AS</div>
+
+              <div>
+                <h4>Arjun Singh</h4>
+                <span>Jaipur</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+        TESTIMONIALS END
+========================================== -->
+    <!-- ==========================================
+            WHY EXPLOREBHARAT START
+========================================== -->
+
+    <section class="why-explorebharat">
+      <div class="container">
+        <div class="section-heading">
+          <!-- <span class="section-tag"> WHY CHOOSE US </span> -->
+
+          <h2>Why ExploreBharat?</h2>
+
+          <p>
+            More than just booking. We help you discover, plan, experience and remember every
+            journey.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <i data-lucide="sparkles"></i>
+
+            <h3>AI Trip Planner</h3>
+
+            <p>Personalized itineraries based on your budget, interests and travel style.</p>
+          </div>
+
+          <div class="feature-card">
+            <i data-lucide="map"></i>
+
+            <h3>Hidden Gems</h3>
+
+            <p>Discover places beyond the usual tourist destinations.</p>
+          </div>
+
+          <div class="feature-card">
+            <i data-lucide="camera"></i>
+
+            <h3>Local Experiences</h3>
+
+            <p>Explore authentic food, culture, festivals and adventures.</p>
+          </div>
+
+          <div class="feature-card">
+            <i data-lucide="shield-check"></i>
+
+            <h3>Trusted Platform</h3>
+
+            <p>Safe planning, reliable information and seamless booking.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+            WHY EXPLOREBHARAT END
+========================================== -->
+
+    <!-- ==========================================
+        NEWSLETTER START
+========================================== -->
+
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-box">
+          <div class="newsletter-content">
+            <span class="section-tag"> STAY UPDATED </span>
+
+            <h2>Get the Best Travel Deals & Hidden Gems</h2>
+
+            <p>
+              Subscribe to receive destination guides, travel inspiration, exclusive offers and AI
+              travel tips.
+            </p>
+          </div>
+
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email address" />
+
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+        NEWSLETTER END
+========================================== -->
+  </main>
+
+  <!-- ==========================================
+                MAIN END
+========================================== -->
+
+  <!-- ==========================================
+        FOOTER START
+========================================== -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <img src="assets/images/l.png" alt="ExploreBharat" />
+
+          <p>
+            ExploreBharat helps travelers discover destinations, build AI-powered itineraries and
+            experience incredible journeys across India.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Explore</h3>
+
+          <a href="#">Destinations</a>
+          <a href="#">Hotels</a>
+          <a href="#">Experiences</a>
+          <a href="#">AI Planner</a>
+        </div>
+
+        <div class="footer-links">
+          <h3>Company</h3>
+
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+        </div>
+
+        <div class="footer-links">
+          <h3>Follow Us</h3>
+
+          <a href="#"><i data-lucide="instagram"></i>Instagram</a>
+          <a href="#"><i data-lucide="facebook"></i>Facebook</a>
+          <a href="#"><i data-lucide="twitter"></i>Twitter</a>
+          <a href="#"><i data-lucide="youtube"></i>YouTube</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 ExploreBharat • Built with ❤️ in India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+        FOOTER END
+========================================== -->
+  <!-- ==========================================
+        LOGIN MODAL START
+========================================== -->
+
+  <div class="modal" id="loginModal">
+
+    <div class="auth-card" id="loginCard">
+
+      <button type="button" class="close-btn" id="closeLogin" aria-label="Close">
+        <i data-lucide="x"></i>
+      </button>
+
+      <h2>Welcome Back</h2>
+
+      <p>Login to continue your ExploreBharat journey.</p>
+
+      <form id="loginForm" class="auth-form">
+
+        <div class="input-group">
+
+          <label for="loginEmail">Email</label>
+
+          <input type="email" id="loginEmail" placeholder="Enter your email" autocomplete="email" required>
 
         </div>
 
-        <div class="search-item">
+        <div class="input-group">
 
-          <label>Check In</label>
+          <label for="loginPassword">Password</label>
 
-          <input type="date">
-
-        </div>
-
-        <div class="search-item">
-
-          <label>Check Out</label>
-
-          <input type="date">
+          <input type="password" id="loginPassword" placeholder="Enter your password" autocomplete="current-password"
+            required>
 
         </div>
 
-        <div class="search-item">
+        <button type="submit" class="auth-btn">
+          Login
+        </button>
 
-          <label>Guests</label>
+      </form>
 
-          <input type="number" min="1" placeholder="Guests">
+      <div class="auth-links">
 
-        </div>
+        <button type="button" id="showRegister">
+          Create Account
+        </button>
 
-        <button class="search-btn" id="searchBtn">
-
-          Search
-
+        <button type="button" id="showForgot">
+          Forgot Password?
         </button>
 
       </div>
 
     </div>
 
-  </section>
+  </div>
 
-  <!-- ======================================
-            CATEGORY
-====================================== -->
+  <!-- ==========================================
+        LOGIN MODAL END
+========================================== -->
+  <!-- ==========================================
+        REGISTER MODAL START
+========================================== -->
 
-  <section class="categories">
+  <div class="modal" id="registerModal">
 
-    <div class="container">
+    <div class="auth-card" id="registerCard">
 
-      <h2>Browse by Category</h2>
+      <button type="button" class="close-btn" id="closeRegister" aria-label="Close">
+        <i data-lucide="x"></i>
+      </button>
 
-      <div class="category-grid">
+      <h2>Create Account</h2>
 
-        <div class="category-card">🏨<p>Hotels</p>
+      <p>Join ExploreBharat and start exploring India.</p>
+
+      <form id="registerForm" class="auth-form">
+
+        <div class="input-group">
+
+          <label for="registerName">Full Name</label>
+
+          <input type="text" id="registerName" placeholder="Enter your full name" autocomplete="name" required>
+
         </div>
 
-        <div class="category-card">🏡<p>Homestays</p>
+        <div class="input-group">
+
+          <label for="registerEmail">Email</label>
+
+          <input type="email" id="registerEmail" placeholder="Enter your email" autocomplete="email" required>
+
         </div>
 
-        <div class="category-card">🏕️<p>Camping</p>
+        <div class="input-group">
+
+          <label for="registerPhone">Phone Number</label>
+
+          <input type="tel" id="registerPhone" placeholder="Enter phone number" autocomplete="tel" required>
+
         </div>
 
-        <div class="category-card">🏖️<p>Resorts</p>
+        <div class="input-group">
+
+          <label for="registerPassword">Password</label>
+
+          <input type="password" id="registerPassword" placeholder="Create password" autocomplete="new-password"
+            required>
+
         </div>
 
-        <div class="category-card">🏘️<p>Villas</p>
+        <div class="input-group">
+
+          <label for="confirmPassword">Confirm Password</label>
+
+          <input type="password" id="confirmPassword" placeholder="Confirm password" autocomplete="new-password"
+            required>
+
         </div>
 
-        <div class="category-card">🌄<p>Mountain View</p>
-        </div>
+        <button type="submit" class="auth-btn">
+          Create Account
+        </button>
+
+      </form>
+
+      <div class="auth-links">
+
+        <button type="button" id="showLogin">
+          Already have an account?
+        </button>
 
       </div>
 
     </div>
 
-  </section>
+  </div>
 
-  <!-- ======================================
-        POPULAR DESTINATIONS
-====================================== -->
+  <!-- ==========================================
+        REGISTER MODAL END
+========================================== -->
+  <!-- ==========================================
+        FORGOT PASSWORD MODAL START
+========================================== -->
 
-  <section class="popular">
+  <div class="modal" id="forgotModal">
 
-    <div class="container">
+    <div class="auth-card" id="forgotCard">
 
-      <div class="section-title">
+      <button type="button" class="close-btn" id="closeForgot" aria-label="Close">
+        <i data-lucide="x"></i>
+      </button>
 
-        <h2>Popular Destinations</h2>
+      <h2>Reset Password</h2>
 
-        <a href="#">Explore More →</a>
+      <p>Enter your registered email and create a new password.</p>
 
-      </div>
+      <form id="forgotForm" class="auth-form">
 
-      <div class="card-grid" id="destinationContainer">
+        <div class="input-group">
+
+          <label for="forgotEmail">Email</label>
+
+          <input type="email" id="forgotEmail" placeholder="Enter your registered email" autocomplete="email" required>
+
+        </div>
+
+        <div class="input-group">
+
+          <label for="newPassword">New Password</label>
+
+          <input type="password" id="newPassword" placeholder="Create new password" autocomplete="new-password"
+            required>
+
+        </div>
+
+        <div class="input-group">
+
+          <label for="confirmNewPassword">Confirm Password</label>
+
+          <input type="password" id="confirmNewPassword" placeholder="Confirm new password" autocomplete="new-password"
+            required>
+
+        </div>
+
+        <button type="submit" class="auth-btn">
+          Reset Password
+        </button>
+
+      </form>
+
+      <div class="auth-links">
+
+        <button type="button" id="backToLogin">
+          Back to Login
+        </button>
 
       </div>
 
     </div>
 
-  </section>
-
-  <!-- ======================================
-        TRENDING HOTELS
-====================================== -->
-
-  <section class="hotels">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <h2>Trending Hotels</h2>
-
-        <a href="#">View All →</a>
-
-      </div>
-
-      <div class="hotel-grid" id="hotelContainer">
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- ======================================
-        EXPLORE BY STATE
-====================================== -->
-
-  <section class="states">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <h2>Explore by State</h2>
-
-        <a href="#">View All →</a>
-
-      </div>
-
-      <div class="state-grid">
-
-        <div class="state-card">
-
-          <img src="assets/images/goa.jpeg">
-
-          <div class="overlay">
-
-            <h3>Goa</h3>
-
-            <p>Beaches • Nightlife • Resorts</p>
-
-          </div>
-
-        </div>
-
-        <div class="state-card">
-
-          <img src="assets/images/kashmir.jpeg">
-
-          <div class="overlay">
-
-            <h3>Jammu & Kashmir</h3>
-
-            <p>Snow • Lakes • Valleys</p>
-
-          </div>
-
-        </div>
-
-        <div class="state-card">
-
-          <img src="assets/images/manali.jpeg">
-
-          <div class="overlay">
-
-            <h3>Himachal Pradesh</h3>
-
-            <p>Mountains • Adventure</p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- ======================================
-        TOP ATTRACTIONS
-====================================== -->
-
-  <section class="attractions">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <h2>Top Tourist Attractions</h2>
-
-        <a href="#">Explore More →</a>
-
-      </div>
-
-      <div class="attraction-grid">
-
-        <div class="attraction-card">
-
-          <img src="assets/images/places/leh.jpeg">
-
-          <div class="attraction-content">
-
-            <h3>Leh Palace</h3>
-
-            <p>📍 Ladakh</p>
-
-          </div>
-
-        </div>
-
-        <div class="attraction-card">
-
-          <img src="assets/images/places/kashmir.jpeg">
-
-          <div class="attraction-content">
-
-            <h3>Dal Lake</h3>
-
-            <p>📍 Srinagar</p>
-
-          </div>
-
-        </div>
-
-        <div class="attraction-card">
-
-          <img src="assets/images/places/manali.jpeg">
-
-          <div class="attraction-content">
-
-            <h3>Solang Valley</h3>
-
-            <p>📍 Himachal Pradesh</p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- ======================================
-            FEATURES
-====================================== -->
-
-  <section class="features">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <h2>Why Choose ExploreBharat</h2>
-
-      </div>
-
-      <div class="feature-grid">
-
-        <div class="feature">
-
-          <div class="icon">🌍</div>
-
-          <h3>500+ Destinations</h3>
-
-          <p>Discover India's most beautiful tourist places.</p>
-
-        </div>
-
-        <div class="feature">
-
-          <div class="icon">🏨</div>
-
-          <h3>Affordable Hotels</h3>
-
-          <p>Compare prices and choose your perfect stay.</p>
-
-        </div>
-
-        <div class="feature">
-
-          <div class="icon">⭐</div>
-
-          <h3>Trusted Reviews</h3>
-
-          <p>Real ratings from travelers across India.</p>
-
-        </div>
-
-        <div class="feature">
-
-          <div class="icon">📞</div>
-
-          <h3>24/7 Support</h3>
-
-          <p>We're here whenever you need travel assistance.</p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- ======================================
-            NEWSLETTER
-====================================== -->
-
-  <section class="newsletter">
-
-    <div class="container">
-
-      <div class="newsletter-box">
-
-        <h2>Stay Updated</h2>
-
-        <p>
-
-          Get the latest travel deals, destination guides and hotel discounts.
-
-        </p>
-
-        <form class="newsletter-form">
-
-          <input type="email" placeholder="Enter your email">
-
-          <button>
-
-            Subscribe
-
-          </button>
-
-        </form>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- ======================================
-                FOOTER
-====================================== -->
-
-  <footer>
-
-    <div class="container footer-grid">
-
-      <!-- Footer remains the same as your current version -->
-
-    </div>
-
-    <div class="copyright">
-
-      © 2026 ExploreBharat | All Rights Reserved.
-      
-    </div>
-
-  </footer>
+  </div>
+
+  <!-- ==========================================
+        FORGOT PASSWORD MODAL END
+========================================== -->
 
   <!-- JavaScript -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 
-  <script src="data/destinations.js"></script>
-  <script src="data/hotels.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/app.js"></script>
 
+  <script src="js/auth.js"></script>
+  <script src="/js/modal.js"></script>
+  <script src="/js/wishlist.js"></script>
+
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 
 </html>

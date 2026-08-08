@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Trips | ExploreBharat</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../css/my-trips.css" />
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body>
+    <!-- ==========================================
+       NAVBAR
+  =========================================== -->
+
+    <header id="navbar"></header>
+
+    <!-- ==========================================
+       MY TRIPS
+  =========================================== -->
+
+    <main class="my-trips-page">
+      <div class="container">
+        <!-- ========================================
+           PAGE HEADER
+      ========================================= -->
+
+        <section class="trips-heading">
+          <div class="trips-heading-content">
+            <span class="trips-label">
+              <i data-lucide="map"></i>
+              Your Journeys
+            </span>
+
+            <h1>My Trips</h1>
+
+            <p>Plan, organize and remember your adventures across India.</p>
+          </div>
+
+          <button class="create-trip-btn" id="createTripBtn" type="button">
+            <i data-lucide="plus"></i>
+            <span>Create Trip</span>
+          </button>
+        </section>
+
+        <!-- ========================================
+           TRIP STATS
+      ========================================= -->
+
+        <section class="trip-stats" aria-label="Trip statistics">
+          <!-- Total -->
+          <article class="trip-stat">
+            <div class="trip-stat-icon">
+              <i data-lucide="briefcase"></i>
+            </div>
+
+            <div>
+              <strong id="totalTrips">0</strong>
+              <span>Total Trips</span>
+            </div>
+          </article>
+
+          <!-- Upcoming -->
+          <article class="trip-stat">
+            <div class="trip-stat-icon">
+              <i data-lucide="calendar-days"></i>
+            </div>
+
+            <div>
+              <strong id="upcomingTrips">0</strong>
+              <span>Upcoming</span>
+            </div>
+          </article>
+
+          <!-- Completed -->
+          <article class="trip-stat">
+            <div class="trip-stat-icon">
+              <i data-lucide="check-circle"></i>
+            </div>
+
+            <div>
+              <strong id="completedTrips">0</strong>
+              <span>Completed</span>
+            </div>
+          </article>
+        </section>
+
+        <!-- ========================================
+           JOURNEYS SECTION
+      ========================================= -->
+
+        <section class="trips-section">
+          <header class="trips-section-header">
+            <div>
+              <h2>My Journeys</h2>
+
+              <p>Your saved travel plans will appear here.</p>
+            </div>
+          </header>
+
+          <!-- ======================================
+             GENERATED TRIP CARDS
+        ======================================= -->
+
+          <div class="trips-grid" id="tripsGrid"></div>
+
+          <!-- ======================================
+             EMPTY STATE
+        ======================================= -->
+
+          <div class="trips-empty" id="tripsEmpty" hidden>
+            <div class="trips-empty-icon">
+              <i data-lucide="map"></i>
+            </div>
+
+            <h2>No trips yet</h2>
+
+            <p>Your next adventure starts here. Create a trip and start planning your journey.</p>
+
+            <button class="primary-btn" id="emptyCreateTrip" type="button">
+              <i data-lucide="plus"></i>
+              <span>Create My First Trip</span>
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <!-- ==========================================
+         CREATE / EDIT TRIP MODAL
+    =========================================== -->
+
+      <div class="trip-modal" id="tripModal" aria-hidden="true">
+        <div
+          class="trip-modal-box"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="createTripTitle"
+        >
+          <!-- Close -->
+          <button class="trip-modal-close" id="closeTripModal" type="button" aria-label="Close">
+            <i data-lucide="x"></i>
+          </button>
+
+          <!-- Modal Header -->
+
+          <span class="trips-label">
+            <i data-lucide="map"></i>
+            New Journey
+          </span>
+
+          <h2 id="createTripTitle">Create New Trip</h2>
+
+          <p>Start planning your next adventure across India.</p>
+
+          <!-- ======================================
+             FORM
+        ======================================= -->
+
+          <form id="tripForm">
+            <!-- Destination -->
+
+            <div class="trip-field">
+              <label for="tripDestination"> Destination </label>
+
+              <input
+                id="tripDestination"
+                name="destination"
+                type="text"
+                placeholder="e.g. Manali"
+                autocomplete="off"
+                required
+              />
+            </div>
+
+            <!-- Dates -->
+
+            <div class="trip-form-row">
+              <div class="trip-field">
+                <label for="tripStart"> Start Date </label>
+
+                <input id="tripStart" name="startDate" type="date" required />
+              </div>
+
+              <div class="trip-field">
+                <label for="tripEnd"> End Date </label>
+
+                <input id="tripEnd" name="endDate" type="date" required />
+              </div>
+            </div>
+
+            <!-- Travelers -->
+
+            <div class="trip-field">
+              <label for="tripTravelers"> Travelers </label>
+
+              <input id="tripTravelers" name="travelers" type="number" min="1" value="1" required />
+            </div>
+
+            <!-- Submit -->
+
+            <button type="submit" class="create-trip-submit">
+              <!-- <i data-lucide="plus"></i> -->
+              <span>Create Trip</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- ==========================================
+       FOOTER
+  =========================================== -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <p>© 2026 ExploreBharat • Built with ❤️ in India</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==========================================
+       JAVASCRIPT
+  =========================================== -->
+
+    <script src="../js/my-trips.js"></script>
+
+    <script>
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    </script>
+  </body>
+</html>

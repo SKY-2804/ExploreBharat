@@ -1,0 +1,173 @@
+:root {
+  --primary: #ff6b00;
+  --secondary: #111827;
+}
+
+/* Overlay */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.modal.active {
+  display: flex;
+}
+
+/* Card */
+
+.auth-card {
+  width: 100%;
+  max-width: 430px;
+  background: #fff;
+  border-radius: 24px;
+  padding: 40px;
+  position: relative;
+  animation: popup 0.3s ease;
+}
+
+@keyframes popup {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Close */
+
+.close-btn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: #f3f4f6;
+  cursor: pointer;
+}
+
+/* Heading */
+
+.auth-card h2 {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.auth-card p {
+  color: #6b7280;
+  margin-bottom: 28px;
+}
+
+/* Form */
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  width: 100%;
+  height: 52px;
+  border: 1px solid #d9d9d9;
+  border-radius: 14px;
+  padding: 0 16px;
+  font-size: 15px;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* Button */
+
+.auth-btn {
+  width: 100%;
+  height: 54px;
+  border: none;
+  border-radius: 14px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Footer */
+
+.auth-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.auth-links button {
+  border: none;
+  background: none;
+  color: var(--primary);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Navbar Avatar */
+
+.profile-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.navbar-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .auth-card {
+    padding: 28px;
+  }
+
+  .auth-links {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+}

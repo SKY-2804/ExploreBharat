@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Wishlist | ExploreBharat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/wishlist.css" />
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+
+    <header id="navbar"></header>
+
+    <!-- Wishlist -->
+
+    <main class="wishlist-page">
+      <div class="container">
+        <section class="wishlist-heading">
+          <div>
+            <span class="wishlist-label">
+              <i data-lucide="heart"></i>
+
+              Your Collection
+            </span>
+
+            <h1>My Wishlist</h1>
+
+            <p>Save the places you dream of exploring across India.</p>
+          </div>
+
+          <div class="wishlist-count">
+            <strong id="wishlistCount">0</strong>
+
+            <span>Saved Places</span>
+          </div>
+        </section>
+
+        <!-- Search / Sort -->
+
+        <section class="wishlist-toolbar">
+          <div class="wishlist-search">
+            <i data-lucide="search"></i>
+
+            <input type="search" id="wishlistSearch" placeholder="Search saved places..." />
+          </div>
+
+          <select id="wishlistSort">
+            <option value="newest">Recently Added</option>
+
+            <option value="az">A–Z</option>
+
+            <option value="za">Z–A</option>
+          </select>
+        </section>
+
+        <!-- Cards -->
+
+        <section class="wishlist-grid" id="wishlistGrid"></section>
+
+        <!-- Empty -->
+
+        <section class="wishlist-empty" id="wishlistEmpty">
+          <div class="wishlist-empty-icon">
+            <i data-lucide="heart"></i>
+          </div>
+
+          <h2>Your wishlist is empty</h2>
+
+          <p>Start exploring India and save the destinations you want to visit.</p>
+
+          <a href="../index.html" class="primary-btn">
+            <i data-lucide="compass"></i>
+
+            Explore Destinations
+          </a>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <p>© 2026 ExploreBharat • Built with ❤️ in India</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+
+    <script src="../js/wishlist.js"></script>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

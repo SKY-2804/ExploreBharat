@@ -1,0 +1,83 @@
+/* ==========================================
+        WHY EXPLOREBHARAT
+========================================== */
+
+.why-explorebharat {
+  padding: 70px 0;
+  background: #ffffff;
+}
+
+.features-grid {
+  margin-top: 60px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 30px;
+}
+
+.feature-card {
+  background: #ffffff;
+
+  border-radius: 22px;
+
+  padding: 40px 30px;
+
+  text-align: center;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+
+  transition: 0.35s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+}
+
+.feature-card svg {
+  width: 60px;
+
+  height: 60px;
+
+  color: var(--primary);
+
+  margin-bottom: 25px;
+}
+
+.feature-card h3 {
+  font-size: 24px;
+
+  color: var(--secondary);
+
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  color: #6b7280;
+
+  line-height: 1.8;
+
+  font-size: 15px;
+}
+
+/* ==========================
+      Responsive
+========================== */
+
+@media (max-width: 992px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    padding: 30px;
+  }
+}

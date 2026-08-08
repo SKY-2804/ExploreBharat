@@ -1,61 +1,678 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ExploreBharat | Destination</title>
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Destination | ExploreBharat</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/destination.css">
-</head>
 
-<body>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/destination.css" />
 
-    <!-- ==========================
-            NAVBAR
-    =========================== -->
+    <!-- Lucide Icons -->
 
-    <header>
-        <div class="container navbar">
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
 
-            <div class="logo">
-                Explore<span>Bharat</span>
-            </div>
+  <body>
+    <!-- ==========================================
+                    NAVBAR START
+    ========================================== -->
 
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="#">Destinations</a></li>
-                </ul>
-            </nav>
+    <header class="navbar">
+      <div class="container navbar-container">
+        <a href="../index.html" class="logo">
+          <img src="../assets/images/l.png" alt="ExploreBharat Logo" class="logo-image" />
+        </a>
 
+        <nav class="navbar-menu">
+          <ul>
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">
+                <i data-lucide="compass"></i>
+                <span>Explore</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="stay.html" class="nav-link">
+                <i data-lucide="hotel"></i>
+                <span>Stay</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="travel.html" class="nav-link">
+                <i data-lucide="plane"></i>
+                <span>Travel</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="experiences.html" class="nav-link">
+                <i data-lucide="mountain"></i>
+                <span>Experiences</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="planner.html" class="nav-link">
+                <i data-lucide="sparkles"></i>
+                <span>AI Planner</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="community.html" class="nav-link">
+                <i data-lucide="users"></i>
+                <span>Community</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="navbar-actions">
+          <button class="icon-btn" aria-label="Wishlist">
+            <i data-lucide="heart"></i>
+          </button>
+
+          <button class="icon-btn" aria-label="Notifications">
+            <i data-lucide="bell"></i>
+          </button>
+
+          <a href="login.html" class="login-btn"> Login </a>
         </div>
+      </div>
     </header>
 
-    <!-- ==========================
-        DESTINATION PAGE
-    =========================== -->
+    <!-- ==========================================
+                    NAVBAR END
+    ========================================== -->
 
-    <section class="destination-section">
+    <main>
+      <!-- ==========================================
+                DESTINATION HERO START
+        ========================================== -->
 
+      <section class="destination-hero">
         <div class="container">
+          <div class="destination-hero-grid">
+            <div class="destination-content">
+              <span class="destination-badge"> Himachal Pradesh </span>
 
-            <div id="destinationDetails">
+              <h1 class="destination-title">Manali</h1>
 
-                <!-- JavaScript will load the destination here -->
+              <div class="destination-info">
+                <span>
+                  <i data-lucide="map-pin"></i>
+                  India
+                </span>
 
+                <span>
+                  <i data-lucide="star"></i>
+                  4.9 Rating
+                </span>
+
+                <span>
+                  <i data-lucide="clock-3"></i>
+                  4 Days Recommended
+                </span>
+              </div>
+
+              <p class="destination-description">
+                Snow covered mountains, beautiful valleys, rivers, adventure sports and peaceful
+                cafes make Manali one of India's most loved destinations throughout the year.
+              </p>
+
+              <div class="destination-buttons">
+                <a href="#" class="primary-btn"> Plan Trip </a>
+
+                <a href="#" class="secondary-btn"> View Hotels </a>
+              </div>
             </div>
 
+            <div class="destination-image">
+              <img src="../assets/images/manali.png" alt="Manali" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+                DESTINATION HERO END
+        ========================================== -->
+
+      <!-- ==========================================
+        DESTINATION OVERVIEW START
+========================================== -->
+
+      <section class="destination-overview">
+        <div class="container">
+          <div class="overview-grid">
+            <div class="overview-card">
+              <i data-lucide="sun"></i>
+
+              <h3>Best Time</h3>
+
+              <p>October - June</p>
+            </div>
+
+            <div class="overview-card">
+              <i data-lucide="wallet"></i>
+
+              <h3>Budget</h3>
+
+              <p>₹8,000 - ₹18,000</p>
+            </div>
+
+            <div class="overview-card">
+              <i data-lucide="clock-3"></i>
+
+              <h3>Duration</h3>
+
+              <p>4 - 5 Days</p>
+            </div>
+
+            <div class="overview-card">
+              <i data-lucide="star"></i>
+
+              <h3>Rating</h3>
+
+              <p>4.9 / 5</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+        DESTINATION OVERVIEW END
+========================================== -->
+
+      <!-- ==========================================
+        DESTINATION GALLERY START
+========================================== -->
+
+      <section class="destination-gallery">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-tag">PHOTO GALLERY</span>
+
+            <h2>Explore Manali</h2>
+
+            <p>Beautiful views from one of India's most loved mountain destinations.</p>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="gallery-item large">
+              <img src="../assets/images/manali.png" alt="Manali" />
+            </div>
+
+            <div class="gallery-item">
+              <img src="../assets/images/ladakh.png" alt="Nature" />
+            </div>
+
+            <div class="gallery-item">
+              <img src="../assets/images/goa.png" alt="View" />
+            </div>
+
+            <div class="gallery-item">
+              <img src="../assets/images/udaipur.png" alt="Lake" />
+            </div>
+
+            <div class="gallery-item">
+              <img src="../assets/images/mountain.webp" alt="Mountains" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+        DESTINATION GALLERY END
+========================================== -->
+
+      <!-- ==========================================
+        THINGS TO DO START
+========================================== -->
+
+      <section class="things-section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-tag">TOP ACTIVITIES</span>
+
+            <h2>Things To Do In Manali</h2>
+
+            <p>Discover unforgettable experiences during your trip.</p>
+          </div>
+
+          <div class="activities-grid">
+            <div class="activity-card">
+              <img src="../assets/images/manali.png" alt="Paragliding" />
+
+              <div class="activity-content">
+                <h3>Paragliding</h3>
+
+                <p>Fly above the beautiful valleys of Solang.</p>
+
+                <span>⭐ 4.9</span>
+              </div>
+            </div>
+
+            <div class="activity-card">
+              <img src="../assets/images/mountain.webp" alt="Trekking" />
+
+              <div class="activity-content">
+                <h3>Trekking</h3>
+
+                <p>Explore mountain trails and glaciers.</p>
+
+                <span>⭐ 4.8</span>
+              </div>
+            </div>
+
+            <div class="activity-card">
+              <img src="../assets/images/ladakh.png" alt="Camping" />
+
+              <div class="activity-content">
+                <h3>Camping</h3>
+
+                <p>Spend nights under the Himalayan sky.</p>
+
+                <span>⭐ 4.7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+        THINGS TO DO END
+========================================== -->
+
+      <!-- ==========================================
+        POPULAR HOTELS START
+========================================== -->
+
+      <section class="hotels-section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-tag">BEST STAYS</span>
+
+            <h2>Popular Hotels in Manali</h2>
+
+            <p>Comfortable stays handpicked for every traveler.</p>
+          </div>
+
+          <div class="hotels-grid">
+            <!-- Hotel 1 -->
+
+            <div class="hotel-card">
+              <img src="../assets/images/manali.png" alt="Hotel" />
+
+              <div class="hotel-content">
+                <h3>Snow Valley Resort</h3>
+
+                <p><i data-lucide="map-pin"></i> Manali Mall Road</p>
+
+                <div class="hotel-bottom">
+                  <span>⭐ 4.8</span>
+
+                  <strong>₹4,500 / Night</strong>
+                </div>
+
+                <a href="#" class="hotel-btn">Book Now</a>
+              </div>
+            </div>
+
+            <!-- Hotel 2 -->
+
+            <div class="hotel-card">
+              <img src="../assets/images/mountain.webp" alt="Hotel" />
+
+              <div class="hotel-content">
+                <h3>The Himalayan</h3>
+
+                <p><i data-lucide="map-pin"></i> Old Manali</p>
+
+                <div class="hotel-bottom">
+                  <span>⭐ 4.9</span>
+
+                  <strong>₹6,200 / Night</strong>
+                </div>
+
+                <a href="#" class="hotel-btn">Book Now</a>
+              </div>
+            </div>
+
+            <!-- Hotel 3 -->
+
+            <div class="hotel-card">
+              <img src="../assets/images/ladakh.png" alt="Hotel" />
+
+              <div class="hotel-content">
+                <h3>River View Cottage</h3>
+
+                <p><i data-lucide="map-pin"></i> Solang Valley</p>
+
+                <div class="hotel-bottom">
+                  <span>⭐ 4.7</span>
+
+                  <strong>₹3,800 / Night</strong>
+                </div>
+
+                <a href="#" class="hotel-btn">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+        POPULAR HOTELS END
+========================================== -->
+
+      <!-- ==========================================
+        NEARBY ATTRACTIONS START
+========================================== -->
+
+      <section class="nearby-section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-tag">EXPLORE MORE</span>
+
+            <h2>Nearby Attractions</h2>
+
+            <p>Don't miss these amazing places around Manali.</p>
+          </div>
+
+          <div class="nearby-grid">
+            <div class="nearby-card">
+              <img src="../assets/images/manali.png" alt="Solang Valley" />
+
+              <div class="nearby-content">
+                <h3>Solang Valley</h3>
+
+                <p>Adventure sports, skiing and mountain views.</p>
+
+                <span>12 km Away</span>
+              </div>
+            </div>
+
+            <div class="nearby-card">
+              <img src="../assets/images/mountain.webp" alt="Rohtang Pass" />
+
+              <div class="nearby-content">
+                <h3>Rohtang Pass</h3>
+
+                <p>Snow covered roads and breathtaking landscapes.</p>
+
+                <span>51 km Away</span>
+              </div>
+            </div>
+
+            <div class="nearby-card">
+              <img src="../assets/images/ladakh.png" alt="Kasol" />
+
+              <div class="nearby-content">
+                <h3>Kasol</h3>
+
+                <p>Beautiful riverside cafés and trekking trails.</p>
+
+                <span>75 km Away</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+        NEARBY ATTRACTIONS END
+========================================== -->
+
+      <!-- ==========================================
+        TRAVELER REVIEWS START
+========================================== -->
+
+      <section class="reviews-section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-tag">TRAVELER REVIEWS</span>
+
+            <h2>What Travelers Say</h2>
+
+            <p>Real experiences shared by people who visited Manali.</p>
+          </div>
+
+          <div class="reviews-grid">
+            <!-- Review 1 -->
+
+            <div class="review-card">
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+
+              <p class="review-text">
+                "Manali was beyond our expectations. The itinerary was well planned and every place
+                was worth visiting."
+              </p>
+
+              <div class="review-user">
+                <div class="review-avatar">RS</div>
+
+                <div>
+                  <h4>Rahul Sharma</h4>
+
+                  <span>Delhi</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+
+            <div class="review-card">
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+
+              <p class="review-text">
+                "Amazing hotels, delicious local food and beautiful mountain views. Highly
+                recommended!"
+              </p>
+
+              <div class="review-user">
+                <div class="review-avatar">PP</div>
+
+                <div>
+                  <h4>Priya Patel</h4>
+
+                  <span>Ahmedabad</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 3 -->
+
+            <div class="review-card">
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+
+              <p class="review-text">
+                "The AI itinerary saved us so much time. We discovered places we never knew
+                existed."
+              </p>
+
+              <div class="review-user">
+                <div class="review-avatar">AS</div>
+
+                <div>
+                  <h4>Arjun Singh</h4>
+
+                  <span>Jaipur</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+        TRAVELER REVIEWS END
+========================================== -->
+
+      <!-- ==========================================
+        TRAVEL TIPS START
+========================================== -->
+
+      <section class="travel-tips">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-tag"> TRAVEL TIPS </span>
+
+            <h2>Know Before You Go</h2>
+
+            <p>Essential information to make your journey smooth and memorable.</p>
+          </div>
+
+          <div class="tips-grid">
+            <div class="tip-card">
+              <i data-lucide="shirt"></i>
+
+              <h3>Carry Warm Clothes</h3>
+
+              <p>Weather changes quickly in the mountains, even during summer.</p>
+            </div>
+
+            <div class="tip-card">
+              <i data-lucide="badge-indian-rupee"></i>
+
+              <h3>Carry Cash</h3>
+
+              <p>Small cafés and local shops may not accept digital payments.</p>
+            </div>
+
+            <div class="tip-card">
+              <i data-lucide="car"></i>
+
+              <h3>Drive Carefully</h3>
+
+              <p>Mountain roads are narrow with sharp turns. Drive slowly.</p>
+            </div>
+
+            <div class="tip-card">
+              <i data-lucide="cloud-sun"></i>
+
+              <h3>Check Weather</h3>
+
+              <p>Always check the weather before visiting Rohtang Pass.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+        TRAVEL TIPS END
+========================================== -->
+
+      <!-- ==========================================
+        BOOK YOUR TRIP START
+========================================== -->
+
+      <section class="trip-cta">
+        <div class="container">
+          <div class="trip-cta-box">
+            <span class="section-tag"> READY TO EXPLORE? </span>
+
+            <h2>Start Planning Your Manali Adventure Today</h2>
+
+            <p>
+              Hotels, experiences, local guides, routes, hidden gems and AI itinerary— everything in
+              one place.
+            </p>
+
+            <div class="trip-buttons">
+              <a href="#" class="primary-btn"> Plan With AI </a>
+
+              <a href="#" class="secondary-btn"> Browse Hotels </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+        BOOK YOUR TRIP END
+========================================== -->
+    </main>
+
+    <!-- ==========================================
+                    FOOTER START
+    ========================================== -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <img src="../assets/images/l.png" alt="ExploreBharat" />
+
+            <p>
+              ExploreBharat helps travelers discover destinations, build AI-powered itineraries and
+              experience incredible journeys across India.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h3>Explore</h3>
+
+            <a href="#">Destinations</a>
+            <a href="#">Hotels</a>
+            <a href="#">Experiences</a>
+            <a href="#">AI Planner</a>
+          </div>
+
+          <div class="footer-links">
+            <h3>Company</h3>
+
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+          </div>
+
+          <div class="footer-links">
+            <h3>Follow Us</h3>
+
+            <a href="#"><i data-lucide="instagram"></i>Instagram</a>
+            <a href="#"><i data-lucide="facebook"></i>Facebook</a>
+            <a href="#"><i data-lucide="twitter"></i>Twitter</a>
+            <a href="#"><i data-lucide="youtube"></i>YouTube</a>
+          </div>
         </div>
 
-    </section>
+        <div class="footer-bottom">
+          <p>© 2026 ExploreBharat • Built with ❤️ in India</p>
+        </div>
+      </div>
+    </footer>
 
-    <!-- JavaScript -->
+    <!-- ==========================================
+                    FOOTER END
+    ========================================== -->
 
-    <script src="../data/destination.js"></script>
     <script src="../js/destination.js"></script>
 
-</body>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
 </html>
