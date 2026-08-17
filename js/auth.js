@@ -6,7 +6,7 @@ const USERS_KEY = 'explorebharat_users';
 const LOGIN_KEY = 'explorebharat_loggedInUser';
 
 // ==========================================
-// Register
+// REGISTER
 // ==========================================
 
 const registerForm = document.querySelector('#registerForm');
@@ -37,97 +37,90 @@ if (registerForm) {
 
     users.push({
       id: Date.now(),
-
       name,
-
       email,
-
       phone,
-
       password,
-
       profileImage: '',
     });
 
     localStorage.setItem(USERS_KEY, JSON.stringify(users));
-    console.log('Users:', users);
 
     alert('Registration Successful.');
 
     registerForm.reset();
 
     registerModal.classList.remove('active');
-
     loginModal.classList.add('active');
   });
-  // ==========================================
-  // LOGIN
-  // ==========================================
+}
 
-  const loginForm = document.querySelector('#loginForm');
+// ==========================================
+// LOGIN
+// ==========================================
 
-  if (loginForm) {
-    loginForm.addEventListener('submit', function (e) {
-      e.preventDefault();
+const loginForm = document.querySelector('#loginForm');
 
-      const email = document.querySelector('#loginEmail').value.trim().toLowerCase();
-      const password = document.querySelector('#loginPassword').value;
+if (loginForm) {
+  loginForm.addEventListener('submit', function (e) {
+    e.preventDefault();
 
-      const users = JSON.parse(localStorage.getItem(USERS_KEY)) || [];
+    const email = document.querySelector('#loginEmail').value.trim().toLowerCase();
+    const password = document.querySelector('#loginPassword').value;
 
-      const user = users.find((u) => u.email === email);
+    const users = JSON.parse(localStorage.getItem(USERS_KEY)) || [];
 
-      if (!user) {
-        alert('Email not registered.');
-        return;
-      }
-
-      if (user.password !== password) {
-        alert('Incorrect password.');
-        return;
-      }
-
-      localStorage.setItem(LOGIN_KEY, JSON.stringify(user));
-      updateNavbar();
-
-      console.log('Logged In:', user);
-
-      alert('Welcome ' + user.name + '!');
-
-      loginModal.classList.remove('active');
-
-      loginForm.reset();
-    });
-  }
-  // ==========================================
-  // NAVBAR
-  // ==========================================
-
-  function updateNavbar() {
-    const loginBtn = document.querySelector('#login-btn');
-
-    if (!loginBtn) return;
-
-    const user = JSON.parse(localStorage.getItem(LOGIN_KEY));
+    const user = users.find((u) => u.email === email);
 
     if (!user) {
-      loginBtn.textContent = 'Login';
-
+      alert('Email not registered.');
       return;
     }
 
-    const letter = user.name.charAt(0).toUpperCase();
+    if (user.password !== password) {
+      alert('Incorrect password.');
+      return;
+    }
 
-    loginBtn.innerHTML = `
+    localStorage.setItem(LOGIN_KEY, JSON.stringify(user));
+
+    updateNavbar();
+
+    alert('Welcome ' + user.name + '!');
+
+    loginModal.classList.remove('active');
+
+    loginForm.reset();
+  });
+}
+
+// ==========================================
+// NAVBAR
+// ==========================================
+
+function updateNavbar() {
+  const loginBtn = document.querySelector('#login-btn');
+
+  if (!loginBtn) return;
+
+  const user = JSON.parse(localStorage.getItem(LOGIN_KEY));
+
+  if (!user) {
+    loginBtn.textContent = 'Login';
+    return;
+  }
+
+  const letter = user.name.charAt(0).toUpperCase();
+
+  loginBtn.innerHTML = `
     <div class="profile-avatar">
       ${letter}
     </div>
   `;
 
-    loginBtn.onclick = () => {
-      window.location.href = 'pages/profile.html';
-    };
-  }
-
-  updateNavbar();
+  loginBtn.onclick = () => {
+    window.location.href = 'pages/profile.html';
+  };
 }
+
+updateNavbar();
